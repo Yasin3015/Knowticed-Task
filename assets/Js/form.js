@@ -18,6 +18,10 @@ const isValidName = (name) => {
   }
 };
 const isValidEmail = (email) => {
+  if (email === "") {
+    emailError.textContent = "Please Enter your Email";
+    return false;
+  }
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   if (!emailRegex.test(email)) {
     emailError.textContent = "Invalid Email";
@@ -28,6 +32,10 @@ const isValidEmail = (email) => {
   }
 };
 const isValidPhone = (phone) => {
+  if (phone === "") {
+    phoneError.textContent = "Please Enter your Phone Number";
+    return false;
+  }
   const phoneRegex = /^\d{10,15}$/;
   if (!phoneRegex.test(phone)) {
     phoneError.textContent = "Invalid Phone Number";
