@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowticed.com</title>
+    <!-- ===== Fontawesome ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/CSS/main-style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Knowticed.com</title>
-  <!-- ===== Fontawesome ========= -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/CSS/main-style.css" />
-</head>
+  <body>
+    <div class="body">
+      <!-- ======== NAVBAR ============ -->
 
-<body>
-  <div class="body">
-    <!-- ======== NAVBAR ============ -->
-
-    <div class="nav" id="NavBar">
-      <div class="container flex">
-        <div class="logo">
-          <img src="assets/images/surface1.png" />
-        </div>
-        <div class="layer2 hiden" id="black"></div>
-        <nav>
-          <div class="links hiden" id="navBar">
-            <div class="logo-2">
-              <img src="assets/images/surface1.png" />
-              <i class="fa-solid fa-xmark" id="closeTheNav"></i>
+      <div class="nav" id="NavBar">
+        <div class="container flex">
+          <div class="logo">
+            <img src="assets/images/surface1.png" />
+          </div>
+          <div class="layer2 hiden" id="black"></div>
+          <nav>
+            <div class="links hiden" id="navBar">
+              <div class="logo-2">
+                <img src="assets/images/surface1.png" />
+                <i class="fa-solid fa-xmark" id="closeTheNav"></i>
+              </div>
+              <ul>
+                <li><a href="index.html" class="nav-link"> Home </a></li>
+                <li><a href="about.html" class="nav-link">About us </a></li>
+                <li><a href="services.html" class="nav-link"> Services</a></li>
+                <li>
+                  <a href="contactus.html" class="active-link nav-link"
+                    >Contact us</a
+                  >
+                </li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="#" class="nav-link">العربية </a></li>
+              </ul>
             </div>
-            <ul>
-              <li><a href="index.html" class="nav-link"> Home </a></li>
-              <li><a href="about.html" class="nav-link">About us </a></li>
-              <li><a href="services.html" class="nav-link"> Services</a></li>
-              <li>
-                <a href="contactus.html" class="active-link nav-link">Contact us</a>
-              </li>
-              <li><a href="careers.html" class="nav-link">Careers</a></li>
-              <li><a href="#" class="nav-link">العربية </a></li>
-            </ul>
-          </div>
 
-          <div class="bars" id="openMenue">
-            <img src="assets/images/hambergermenu.png" />
-          </div>
-        </nav>
-      </div>
-    </div>
-    <main class="contactus">
-      <div class="container">
-        <div class="text">
-          <div class="headline">
-            <h1>Contact Us</h1>
-            <h2>
-              Your Feedback Shapes Our Success: Join Us in Building a Better
-              Experience!
-            </h2>
-          </div>
-
-         
-          <p>
-            At Knowticed, we firmly believe that feedback is the lifeblood of
-            our success. We value your thoughts, opinions, and suggestions as
-            they shape our products, services, and overall customer
-            experience. Your voice matters, and we are committed to creating a
-            platform that truly meets your needs.
-          </p>
-          <p class="p2">
-            By sharing your experiences, you become an integral part of our
-            growth journey. Your feedback helps us identify pain points,
-            eliminate barriers, and create seamless experiences that exceed
-            your expectations. We listen attentively, analyze your input
-            meticulously, and implement changes that address your concerns and
-            amplify your satisfaction.
-          </p>
+            <div class="bars" id="openMenue">
+              <img src="assets/images/hambergermenu.png" />
+            </div>
+          </nav>
         </div>
-         <div class="form-container">
+      </div>
+      <main class="contactus">
+        <div class="container">
+          <div class="text">
+            <div class="headline">
+              <h1>Contact Us</h1>
+              <h2>
+                Your Feedback Shapes Our Success: Join Us in Building a Better
+                Experience!
+              </h2>
+            </div>
+
+            <p>
+              At Knowticed, we firmly believe that feedback is the lifeblood of
+              our success. We value your thoughts, opinions, and suggestions as
+              they shape our products, services, and overall customer
+              experience. Your voice matters, and we are committed to creating a
+              platform that truly meets your needs.
+            </p>
+            <p class="p2">
+              By sharing your experiences, you become an integral part of our
+              growth journey. Your feedback helps us identify pain points,
+              eliminate barriers, and create seamless experiences that exceed
+              your expectations. We listen attentively, analyze your input
+              meticulously, and implement changes that address your concerns and
+              amplify your satisfaction.
+            </p>
+          </div>
+          <div class="form-container">
             <form action="#" method="post">
               <div class="field-holder">
                 <label for="name">Name</label>
@@ -102,36 +106,42 @@
                 <p id="messageError" class="error"></p>
               </div>
 
-             <button type="submit">Send</button>
+              <button type="submit">Send</button>
             </form>
-           </div>
-          
-      </div>
-    </main>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      <div class="container">
-        <div class="terms">
-          <p><a href="terms.html">terms and conditions</a></p>
+      <footer>
+        <div class="container">
+          <div class="terms">
+            <p><a href="terms.html">terms and conditions</a></p>
+          </div>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100065245550887&mibextid=ZbWKwL"
+              target="_blank"
+              ><img src="assets/images/facebook.png"
+            /></a>
+            <a href="https://twitter.com/knowticed" target="_blank"
+              ><img src="assets/images/twitter.png"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/knowticed?trk=similar-pages"
+              target="_blank"
+              ><img src="assets/images/linkedin-01.png"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>@Knowticed 2023 All Rightes Reserved</p>
+          </div>
         </div>
-        <div class="social">
-          <a href="https://www.facebook.com/profile.php?id=100065245550887&mibextid=ZbWKwL" target="_blank"><img
-              src="assets/images/facebook.png" /></a>
-          <a href="https://twitter.com/knowticed" target="_blank"><img src="assets/images/twitter.png" /></a>
-          <a href="https://www.linkedin.com/company/knowticed?trk=similar-pages" target="_blank"><img
-              src="assets/images/linkedin-01.png" /></a>
-        </div>
-        <div class="copyright">
-          <p>@Knowticed 2023 All Rightes Reserved</p>
-        </div>
-      </div>
-    </footer>
-    <!-- ======== NAVBAR ============ -->
-  </div>
+      </footer>
+      <!-- ======== NAVBAR ============ -->
+    </div>
 
-  <script src="assets/Js/nav.js"></script>
-  <script src="assets/Js/contact.js"></script>
-  <script src="assets/Js/form.js"></script>
-</body>
+    <script src="assets/Js/nav.js"></script>
+    <script src="assets/Js/contact.js"></script>
+    <script src="assets/Js/form.js"></script>
+  </body>
 </html>
-
