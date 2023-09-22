@@ -922,7 +922,9 @@ label:hover{
 }
 @media(max-width:992px) {
     .contactus .container{
-        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
         text-align: center !important;
     }
 
