@@ -763,6 +763,12 @@ main h1{
         height: fit-content !important;
         background-image: none !important;
     }
+    .apps__links{
+        text-align: center !important;
+    }
+    .apps__links img{
+        margin: 10px !important;
+    }
 }
 @media (max-width:500px) {
     .landing section .img img{
