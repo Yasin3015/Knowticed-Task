@@ -921,13 +921,15 @@ label:hover{
     background-color: #fde170;
 }
 @media(max-width:992px) {
-    main .container{
+    .contactus .container{
         flex-direction: column !important;
+        text-align: center !important;
     }
 
     .form-container,
     .text {
         width: 100%;
+        padding: 5px !important;
     }
 
 }
