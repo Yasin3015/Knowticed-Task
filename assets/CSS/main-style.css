@@ -88,6 +88,7 @@
 }
 /* ======= Container ============= */
 
+
 main{
     margin: 40px 0px;
 }
@@ -782,24 +783,22 @@ main h1{
 .contactus .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
 }
 
 h2 {
     color: #f5f5f5;
     line-height: 1.3;
     font-weight: 500;
-    /* margin-bottom: 40px; */
 }
 
 .text,
-.form-container {
+.left {
     width: 48%;
+    height: 553px;
+    overflow: auto;
 }
 
-.form-container {
-    margin-top: 50px !important;
-}
 
 .text {
     color: #cccccc;
@@ -827,7 +826,8 @@ h2 {
     box-shadow: 0px 4px 32px 0px #2222223d;
     height: fit-content;
     padding: 20px 30px;
-    margin-top: 105px !important;
+    margin-top: 78px !important;
+
 }
 
 .form-container form {
@@ -850,6 +850,7 @@ form label {
     top: 0px;
     left: 0px;
     color: white;
+    /* z-index: 1000; */
 }
 .label{
     position: absolute;
@@ -860,6 +861,7 @@ form label {
     transition: all .5s !important;
     width: 98%;
     height: fit-content !important;
+    width: fit-content !important;
 }
 .field{
     border-top: 0px solid transparent !important;
@@ -880,7 +882,7 @@ form div::before{
     width: 15px;
     background-color: white;
     position: absolute;
-    right: 2px;
+    right: 3px;
     top: 0px;
     z-index: 0;
 }
@@ -890,10 +892,12 @@ form div::before{
     border-radius: 5px;
     border: 1px solid white;
     outline: none;
-    margin-bottom: 15px;
     background: linear-gradient(0deg, #54545400, #545454);
     color: white;
     caret-color: #FFDE59;
+}
+.field-holder{
+    margin-bottom: 10px;
 }
 
 .form-container textarea {
@@ -922,6 +926,10 @@ label:hover{
     cursor: pointer;
     border-radius: 5px;
 }
+label sup{
+    color: red;
+    margin-left: 5px;
+}
 
 .form-container button:hover {
     background-color: #fde170;
@@ -934,11 +942,380 @@ label:hover{
         text-align: center !important;
     }
 
-    .form-container,
+    .left,
     .text {
         width: 100%;
+        height: fit-content !important;
+        overflow: hidden !important;
+        margin-top: 30px;
         padding: 5px !important;
+        text-align: center !important;
+    }
+    .form-container{
+        margin-top: 0px !important;
+        padding: 15px !important;
+    }
+    .text h2{
+        font-size: 18px !important;
+        font-weight: 500 !important;
     }
 
 }
+.error{
+    color: red !important;
+    font-size: 10px !important;
+    font-weight: 100;
+    padding: 5px 15px !important; 
+    text-align: left;
+}
+/* =========================== start model ====================================== */
+
+.model{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.405);
+    display: none;
+}
+.model .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.model .container .model__message{
+    width: 70%;
+    margin: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #2D2D2D;
+    
+}
+@keyframes translate {
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1)
+    }
+}
+.transform{
+    animation-name: translate;
+    animation-duration: .75s;
+    animation-iteration-count: 1;
+}
+.model .container .model__message .model__message__header{
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500 !important;
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgb(77, 77, 77);
+    line-height: 1.2rem;
+}
+.model .container .model__message .model__message__text{
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+    padding: 10px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    line-height: 1rem;
+}
+.model .container .model__message .model__message__buttons{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.model .container .model__message .model__message__buttons button{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 80%;
+    margin: auto !important;
+    background-color: #eec110;
+}
+@media (max-width:600px) {
+    .model__message{
+        width: 100% !important;
+    }
+}
+/* =============== animation check ============= */
+.success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+}
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 4px solid #4CAF50;
+        
+        &::before {
+            top: 3px;
+            left: -2px;
+            width: 30px;
+            transform-origin: 100% 50%;
+            border-radius: 100px 0 0 100px;
+        }
+        
+        &::after {
+            top: 0;
+            left: 30px;
+            width: 60px;
+            transform-origin: 0 50%;
+            border-radius: 0 100px 100px 0;
+            animation: rotate-circle 4.25s ease-in;
+            animation-iteration-count: infinite;
+        }
+        
+        &::before, &::after {
+            content: '';
+            height: 100px;
+            position: absolute;
+            transform: rotate(-45deg);
+            background-color: #2D2D2D;
+        }
+        
+        .icon-line {
+            height: 5px;
+            background-color: #4CAF50;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 10;
+            
+            &.line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 2s;
+                animation-iteration-count: infinite;
+
+            }
+            
+            &.line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 2s;
+                animation-iteration-count: infinite;
+            }
+        }
+        
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 4px solid rgba(76, 175, 80, .5);
+        }
+        
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 26px;
+            z-index: 1;
+            height: 85px;
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+    5% {
+        transform: rotate(-45deg);
+    }
+    12% {
+        transform: rotate(-405deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}
+/*  */
+.red{
+    border-color: red !important;
+}
+form .bg-color::after,
+form .bg-color::before{
+    background-color: red !important;
+}
+/* =========================== end model ====================================== */
+
 /* End Contact Us page */
+
+/* ================= Terms ==================== */
+
+.returnBack{
+
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 20px;
+    padding: 0px;
+    height:fit-content !important;
+}
+.return{
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.termsAndCoditions{
+    color: #FFDE59;
+    font-size: 45px;
+    line-height: 28px;
+}
+
+.lastUpadte{
+    margin-left: 50px;
+    color: white;
+    font-size: 23px;    
+    margin-top: -100px !important;
+    display:inline-block;
+}
+.buttom{
+    height: 405px;
+    background-image: url("../images/Section\ 1\ \(1\).png");
+    background-size: auto !important;
+    background-position: -30px;
+    padding: 40px 60px;
+    border-radius: 27px !important ;
+    overflow: auto;
+    color: rgb(223, 223, 223);
+}
+.buttom li,
+.buttom p{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.top{
+    margin-bottom: 30px;
+}
+.list{
+    margin-left: 40px;
+}
+.orededList {
+    list-style-type: none;
+    counter-reset: custom-counter;
+    padding-left: 0;
+}
+  
+.orededList li:before {
+    counter-increment: custom-counter;
+    content: counter(custom-counter, lower-alpha) ") ";
+}
+@media (max-width:992px) {
+    main .buttom{
+        background-image:  none;
+        text-align: left;
+        font-size: 14px !important;
+        font-weight: 400;
+        padding: 10px;
+        height: 350px !important;
+        margin-bottom: 0px !important;
+    }
+    main .buttom li,
+    main .buttom p{
+        font-size: 12px !important;
+        font-weight: 400;
+    }
+    
+    .deleted{
+        display: none;
+    }
+    .termsAndCoditions{
+        width: 100%;
+        font-size: 45px !important;
+        margin-top: -30px !important;
+        line-height: 30px;
+    }
+}
+@media (max-width: 500px) {
+    main .buttom{
+        height: 290px;
+    }
+    .termsAndCoditions{
+        font-size: 30px !important;
+    }
+}

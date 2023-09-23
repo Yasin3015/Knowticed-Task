@@ -5,26 +5,51 @@ const phoneError = document.getElementById("phoneError");
 const subjectError = document.getElementById("subjectError");
 const messageError = document.getElementById("messageError");
 
+let displayError =  (ele,msg)=>{
+  ele.textContent = msg;
+  ele.parentElement.children[1].classList.add(`red`);
+  ele.parentElement.classList.add("bg-color")
+};
+// REMOVE THE MODEL
+let modal =  document.getElementById("theModel");
+let removeModel = () => {
+  document.getElementById("modelMessage").classList.remove("transform")
+  document.getElementById("theModel").style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    removeModel()
+  }
+}
+// show the model 
+let showModel = () => {
+  document.getElementById("theModel").style.display = "block";
+  document.getElementById("modelMessage").classList.add("transform")
+}
+document.getElementById("close").addEventListener('click', removeModel);
+
+
 const isValidName = (name) => {
   if (name.length < 6 && name.length > 0) {
-    nameError.textContent = "Name must be at least 6 characters long";
+    displayError(nameError,"Name must be at least 6 characters long");
     return false;
   } else if (name.length === 0) {
-    nameError.textContent = "Please Enter your Name";
+    displayError(nameError,"Please Enter your Name");
     return false;
   } else {
     nameError.textContent = "";
     return true;
   }
 };
+
 const isValidEmail = (email) => {
   if (email === "") {
-    emailError.textContent = "Please Enter your Email";
+    displayError(emailError,"Please Enter your Email")
     return false;
   }
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   if (!emailRegex.test(email)) {
-    emailError.textContent = "Invalid Email";
+    displayError(emailError,"Invalid Email")
     return false;
   } else {
     emailError.textContent = "";
@@ -33,12 +58,12 @@ const isValidEmail = (email) => {
 };
 const isValidPhone = (phone) => {
   if (phone === "") {
-    phoneError.textContent = "Please Enter your Phone Number";
+    displayError(phoneError,"Please Enter your Phone Number")
     return false;
   }
   const phoneRegex = /^\d{10,15}$/;
   if (!phoneRegex.test(phone)) {
-    phoneError.textContent = "Invalid Phone Number";
+    displayError(phoneError,"Invalid Phone Number")
     return false;
   } else {
     phoneError.textContent = "";
@@ -46,9 +71,10 @@ const isValidPhone = (phone) => {
   }
 };
 
+
 const isValidSubject = (subject) => {
   if (subject === "") {
-    subjectError.textContent = "Please Enter Subject";
+    displayError(subjectError,"Please Enter Subject")
     return false;
   }
   return true;
@@ -56,7 +82,7 @@ const isValidSubject = (subject) => {
 
 const isValidMessage = (message) => {
   if (message === "") {
-    messageError.textContent = "Please Enter Message";
+    displayError(messageError,"Please Enter Message")
     return false;
   }
   return true;
@@ -100,4 +126,5 @@ formEl.addEventListener("submit", (e) => {
       console.log(data);
     })
     .catch((err) => console.log(err));
+    showModel();
 });
