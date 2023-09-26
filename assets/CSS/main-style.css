@@ -475,13 +475,19 @@ main h1 {
 }
 
 @media (max-width:930px) {
+
     .service {
         height: fit-content !important;
-        /* margin-top: 100px; */
         background-image: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .service .info h2 {
+        font-size: 25px !important;
+    }
+    .serv__parent{
+        height: fit-content !important;
     }
 
     .service__cont {
