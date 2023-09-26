@@ -1,0 +1,83 @@
+html{
+    direction: rtl;
+}
+
+.nav .contact i span a {
+    margin-right: 35px;
+}
+.career__rev{
+    background-image: url("../images/Section\ 2.png");
+    background-position: 30px;
+    background-repeat: no-repeat !important;
+}
+.career__left{
+    background-image: url("../images/Rectangle\ 2021.png");
+    background-position: -1px;
+    background-repeat: no-repeat !important;
+    padding-right: 0px ;
+    padding-left: 30px;
+}
+.tap-active{
+    padding-left: 20px;
+}
+.tab__content{
+    text-align: right;
+}
+.apps__links img{
+    height: 40px;
+    margin: 20px 0px 0px 30px;
+}
+form label {
+    right: 0px;
+}
+.label{
+    right: 25px;
+}
+form div::after{
+    right: 2px;
+}
+form div::before{
+    left: 3px;
+}
+.error{
+    text-align: right;
+}
+.list{
+    margin-right: 40px;
+}
+.orededList{
+    padding-right: 0px;
+}
+
+@media (max-width:1020px) {
+    .career .info{
+        padding-right: 15px;
+    }
+    .career__left{
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hiden {
+        right: -100%;
+    }
+
+    .hiden2 {
+        left: 100%;
+    }
+    .visible {
+        left: 0;
+    }
+    .visible2{
+        right: 0 !important;
+    }
+    main .buttom{
+        text-align: right;
+    }
+}
+@media (max-width:930px) {
+    .career .info{
+        text-align: right;
+    }
+}

@@ -128,3 +128,14 @@ formEl.addEventListener("submit", (e) => {
     .catch((err) => console.log(err));
     showModel();
 });
+
+// Remove error on focus input
+
+let inputs =document.querySelectorAll("form .rem__error");
+inputs.forEach((ele)=>{
+  ele.addEventListener("click",()=>{
+    ele.parentElement.classList.remove("bg-color");
+    ele.parentElement.children[2].textContent=""
+    ele.classList.remove("red")
+  })
+})
