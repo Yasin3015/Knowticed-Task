@@ -476,7 +476,7 @@ main h1 {
 
 @media (max-width:930px) {
     .service {
-        height: fit-content;
+        height: fit-content !important;
         /* margin-top: 100px; */
         background-image: none;
         flex-direction: column;
