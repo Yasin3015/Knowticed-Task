@@ -621,6 +621,9 @@ main h1 {
     .headline-2 {
         font-size: 27px;
     }
+    .career .info p{
+        font-size: 20px
+    }
 }
 
 /* ================= About Us ==================== */
