@@ -31,3 +31,4 @@ for (var i = 0; i < navigationLinks.length; i++) {
         setTimeout(deletebackground, 500);
     }
 }
+document.getElementById("year").textContent = new Date().getFullYear() ;

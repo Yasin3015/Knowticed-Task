@@ -16,32 +16,34 @@
   <div class="body">
     <!-- ======== NAVBAR ============ -->
 
-    <div class="nav" id="NavBar">
+    <div class=" nav" id="NavBar">
       <div class="container flex">
         <div class="logo">
-          <img src="assets/images/surface1.png" />
+          <a href="index.html">
+            <img src="assets/images/surface1.svg">
+          </a>
         </div>
         <div class="layer2 hiden" id="black"></div>
         <nav>
           <div class="links hiden" id="navBar">
             <div class="logo-2">
-              <img src="assets/images/surface1.png" />
+              <a href="index.html">
+                <img src="assets/images/surface1.svg">
+              </a>
               <i class="fa-solid fa-xmark" id="closeTheNav"></i>
             </div>
             <ul>
-              <li><a href="index.html" class="nav-link"> Home </a></li>
+              <li><a href="index.html" class="active-link nav-link"> Home </a></li>
               <li><a href="about.html" class="nav-link">About us </a></li>
               <li><a href="services.html" class="nav-link"> Services</a></li>
-              <li>
-                <a href="contactus.html" class="active-link nav-link">Contact us</a>
-              </li>
+              <li><a href="contactus.html" class="nav-link">Contact us</a></li>
               <li><a href="careers.html" class="nav-link">Careers</a></li>
-              <li><a href="#" class="nav-link">العربية </a></li>
+              <li><a href="#" class="nav-link" id="language">العربية </a></li>
             </ul>
           </div>
 
-          <div class="bars" id="openMenue">
-            <img src="assets/images/hambergermenu.png" />
+          <div class=" bars" id="openMenue">
+            <img src="assets/images/hambergermenu.svg">
           </div>
         </nav>
       </div>
@@ -51,6 +53,7 @@
         <div class="text">
           <div class="headline">
             <h1>Contact Us</h1>
+            <br>
             <h2>
               Your Feedback Shapes Our Success: Join Us in Building a Better
               Experience!
@@ -79,22 +82,22 @@
             <form action="#" method="post">
               <div class="field-holder">
                 <label for="name">Name <sup> *</sup></label>
-                <input type="text" id="name" name="name" class="rem__error"/>
+                <input type="text" id="name" name="name" class="rem__error" />
                 <p id="nameError" class="error"></p>
               </div>
               <div class="field-holder">
                 <label for="email">Email <sup> *</sup></label>
-                <input type="email" id="email" name="email" class="rem__error" autocomplete="off"/>
+                <input type="email" id="email" name="email" class="rem__error" autocomplete="off" />
                 <p id="emailError" class="error"></p>
               </div>
-              <div class="field-holder">
+              <div class="field-holder phone">
                 <label for="phone">Phone Number <sup> *</sup></label>
-                <input type="tel" id="phone" name="phone" class="rem__error"/>
+                <input type="tel" id="phone" name="phone" class="rem__error" />
                 <p id="phoneError" class="error"></p>
               </div>
               <div class="field-holder">
                 <label for="subject">Subject <sup> *</sup></label>
-                <input type="text" id="subject" name="subject" class="rem__error"/>
+                <input type="text" id="subject" name="subject" class="rem__error" />
                 <p id="subjectError" class="error"></p>
               </div>
               <div class="field-holder">
@@ -102,58 +105,65 @@
                 <textarea id="message" name="message" rows="4" class="rem__error"></textarea>
                 <p id="messageError" class="error"></p>
               </div>
-  
+
               <button type="submit">Send</button>
             </form>
           </div>
-          
+
         </div>
       </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="container">
-      <div class="terms">
-        <p class="open__terms"><a href="terms.html">terms and conditions</a></p>
+    <footer>
+      <div class="container">
+        <div class="terms">
+          <p class="open__terms"><a href="terms.html">terms and conditions</a></p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100065245550887&mibextid=ZbWKwL" target="_blank"><img
+              src="assets/images/facebook.svg"></a>
+          <a href="https://twitter.com/knowticed" target="_blank"><img src="assets/images/twitter.svg"></a>
+          <a href="https://www.linkedin.com/company/knowticed?trk=similar-pages" target="_blank"><img
+              src="assets/images/linkedin-01.svg"></a>
+
+        </div>
+        <div class="copyright">
+          <p>Knowticed <span id="year"></span> All Rightes Reserved </p>
+        </div>
+
+
+
       </div>
-      <div class="social">
-        <a href="https://www.facebook.com/profile.php?id=100065245550887&mibextid=ZbWKwL" target="_blank"><img
-            src="assets/images/facebook.png" /></a>
-        <a href="https://twitter.com/knowticed" target="_blank"><img src="assets/images/twitter.png" /></a>
-        <a href="https://www.linkedin.com/company/knowticed?trk=similar-pages" target="_blank"><img
-            src="assets/images/linkedin-01.png" /></a>
-      </div>
-      <div class="copyright">
-        <p>@Knowticed 2023 All Rightes Reserved</p>
-      </div>
-    </div>
-  </footer>
-  <!-- ======== NAVBAR ============ -->
+    </footer>
+    <!-- ======== NAVBAR ============ -->
   </div>
-      <!-- ======================== model creation ============== -->
+  <!-- ======================== model creation ============== -->
 
-      <div class="model" id="theModel">
-        <div class="container">
-            <div class="model__message" id="modelMessage">
-              <div class="success-checkmark">
-                <div class="check-icon">
-                  <span class="icon-line line-tip"></span>
-                  <span class="icon-line line-long"></span>
-                  <div class="icon-circle"></div>
-                  <div class="icon-fix"></div>
-                </div>
-              </div>
-                <h2 class="model__message__header"> elit. Dolore saepe nisi labore nobis aspernatur placeat eum eaque reprehenderit vel, quaerat et delectus porro obcaecati voluptatibus mollitia, quae similique, voluptatum odio.</h2>
-                <p class="model__message__text">  elit. Ducimus excepturi recusandae culpa sed veritatis. Beatae harum nemo a, nostrum labore accusamus nobis tempora. Tempore, laudantium. </p>
-                <div class="model__message__buttons">
-                    <button type="button" class="secondary" id="close">close</button>
-                </div>
-            </div>
+  <div class="model" id="theModel">
+    <div class="container">
+      <div class="model__message" id="modelMessage">
+        <div class="success-checkmark">
+          <div class="check-icon">
+            <span class="icon-line line-tip"></span>
+            <span class="icon-line line-long"></span>
+            <div class="icon-circle"></div>
+            <div class="icon-fix"></div>
+          </div>
         </div>
+        <h2 class="model__message__header"> elit. Dolore saepe nisi labore nobis aspernatur placeat eum eaque
+          reprehenderit vel, quaerat et delectus porro obcaecati voluptatibus mollitia, quae similique, voluptatum odio.
+        </h2>
+        <p class="model__message__text"> elit. Ducimus excepturi recusandae culpa sed veritatis. Beatae harum nemo a,
+          nostrum labore accusamus nobis tempora. Tempore, laudantium. </p>
+        <div class="model__message__buttons">
+          <button type="button" class="secondary" id="close">close</button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- ======================== end model creation ============== -->
-    
+  <!-- ======================== end model creation ============== -->
+
   <script src="assets/Js/nav.js"></script>
   <script src="assets/Js/contact.js"></script>
   <script src="assets/Js/form.js"></script>
