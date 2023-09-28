@@ -745,7 +745,7 @@ main h1 {
 
 @media (max-width: 830px) {
     .about__flex .image img {
-        width: 250px;
+        width: 180px;
         height: fit-content !important;
     }
 
@@ -754,6 +754,7 @@ main h1 {
         flex-direction: column-reverse;
         height: 650px;
     }
+    
 
     .about__flex .tab__content {
         width: 100%;
@@ -782,11 +783,12 @@ main h1 {
     background-image: none;
     background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
     width: 100%;
-    height: 350px;
+    height: 380px;
 }
 
 .landing {
-    margin-top: 0px;
+    margin-top: 70px;
+
 }
 
 .landing section {
@@ -799,8 +801,8 @@ main h1 {
 
 .landing section .info {
     width: 900px !important;
-    padding: 30px;
-    margin-left: 60px;
+    margin: 0px !important;
+    margin-left: 60px !important;
 }
 
 .landing section .img {
@@ -868,7 +870,9 @@ main h1 {
     font-size: 20px;
     color: #FFDE59;
 }
-
+.apps__links{
+    margin-top: 25px;
+}
 .apps__links img {
     height: 40px;
     margin: 20px 30px 0px 0px;
