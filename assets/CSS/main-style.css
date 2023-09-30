@@ -749,15 +749,14 @@ main h1 {
     }
 
     .about__flex .image img {
-        width: 280px;
+        height: 380px;
     }
 
 }
 
 @media (max-width: 830px) {
     .about__flex .image img {
-        width: 180px;
-        height: fit-content !important;
+        height: 280px;
     }
 
     .about__flex {
@@ -1450,9 +1449,7 @@ form .bg-color::before {
 
 .buttom {
     height: 405px;
-    background-image: url("../images/Section\ 1\ \(1\).png");
-    background-size: auto !important;
-    background-position: -30px;
+    background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
     padding: 40px 60px;
     border-radius: 27px !important;
     overflow: auto;
