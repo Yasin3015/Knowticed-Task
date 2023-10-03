@@ -17,7 +17,7 @@ const removeArabicDirection = () => {
 };
 
 const changeLanguage = () => {
-  if (languageBtn.textContent === "English") {
+  if (languageBtn && languageBtn.textContent === "English") {
     for (const key of Object.keys(jsonEN)) {
       const el = document.querySelector(`.${key}`);
       if (el) el.textContent = jsonEN[key];
@@ -33,10 +33,14 @@ const changeLanguage = () => {
     arabicDirection();
   }
 };
-languageBtn.addEventListener("click", changeLanguage);
+if (languageBtn) languageBtn.addEventListener("click", changeLanguage);
 
 //....................................
 if (localStorage.getItem("language")) {
-  languageBtn.textContent = localStorage.getItem("language");
+  if (languageBtn) languageBtn.textContent = localStorage.getItem("language");
+  changeLanguage();
+} else {
+  localStorage.setItem("language", "English");
+  languageBtn.textContent = "العربية";
   changeLanguage();
 }
