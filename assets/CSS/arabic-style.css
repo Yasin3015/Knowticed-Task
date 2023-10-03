@@ -110,12 +110,10 @@ form div::before {
         height: fit-content !important;
         overflow: hidden;
         border-radius: 20px;
-        background-color: #2D2D2D;
     }
     .career .img img {
         width: 100% !important;
         height: fit-content !important;
-        background-color: #2D2D2D;
         text-align: center;
         border-radius: 20px !important;
         padding: 0px !important;
