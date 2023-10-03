@@ -13,6 +13,12 @@ html{
     padding-right: 0px;
     padding-left: 0px;
 }
+.about__flex ul,
+.about__flex ul,
+.about__flex p{
+    padding-left: 0px;
+    padding-right: 25px;
+}
 .landing section .img {
     padding-right: 40px;
     padding-bottom: 0px;

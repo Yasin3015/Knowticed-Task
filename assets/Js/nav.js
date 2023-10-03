@@ -1,3 +1,8 @@
+
+if(window.localStorage.getItem("language") == null){
+    window.localStorage.setItem("language","English");
+}
+
 // remove loading page
 function loadingPage() {
   if (document.getElementById("loading"))
@@ -40,6 +45,3 @@ for (var i = 0; i < navigationLinks.length; i++) {
   };
 }
 document.getElementById("year").textContent = new Date().getFullYear();
-if (!localStorage.getItem("language")) {
-  localStorage.setItem("language", "English");
-}
