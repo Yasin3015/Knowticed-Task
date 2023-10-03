@@ -13,7 +13,8 @@ html{
     padding-right: 0px;
     padding-left: 0px;
 }
-.about__flex li,
+.about__flex ul,
+.about__flex ul,
 .about__flex p{
     padding-left: 0px;
     padding-right: 25px;
