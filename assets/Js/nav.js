@@ -1,4 +1,6 @@
-
+if(window.localStorage.getItem("language") == null){
+    window.localStorage.setItem("language","English")
+}
 // remove loading page
 function loadingPage() {
     document.getElementById("loading").style.display = "none";
