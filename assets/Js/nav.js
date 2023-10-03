@@ -1,3 +1,12 @@
+
+// remove loading page
+function loadingPage() {
+    document.getElementById("loading").style.display = "none";
+}
+
+window.onload = function () {
+    setTimeout(loadingPage, 500)
+}
 // open and close the nav bar
 function viewMenue() {
     document.getElementById("navBar").classList.remove("hiden2");

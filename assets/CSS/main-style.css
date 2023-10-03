@@ -21,6 +21,76 @@ html {
     background-repeat: no-repeat;
     overflow: auto;
 }
+/* ================ Loading ================= */
+.lodaingPage {
+    background-image: url(../images/Rectangle\ \(1\).jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.lodaingPage .spinner {
+    width: 80px;
+    height: 80px;
+
+    position: relative;
+    margin: 100px auto;
+}
+
+.lodaingPage .double-bounce1,
+.lodaingPage .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.lodaingPage .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+/* ========  Loading ============== */
 
 /* ======= Scroll bar ============ */
 
@@ -349,7 +419,7 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 3px 0px;
 }
 
 footer .container div a {
@@ -635,7 +705,7 @@ main h1 {
         margin: auto !important;
     }
     .career .img img.iimg{
-        max-width: 100% !important;
+        width: 100% !important;
     }
 
     .headline-2 {
@@ -678,13 +748,13 @@ main h1 {
     font-weight: 500;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: capitalize;
 }
 
 .work-headers .header-p {
     margin: 10px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     color: #8b8b8d;
     text-transform: capitalize;
     cursor: pointer;
@@ -694,6 +764,7 @@ main h1 {
 .tap-active {
     color: #FFDE59 !important;
     padding-left: 0px;
+    padding-right: 0px ;
     transition: all .5s !important;
 }
 
@@ -728,7 +799,7 @@ main h1 {
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
-
+    margin-bottom: 20px !important;
 }
 
 .about__flex .image img {
@@ -817,14 +888,13 @@ main h1 {
 
 .landing section .img {
     padding-left: 40px;
-    width: 400px !important;
+    width: 520px !important;
     padding-bottom: 30px;
     display: flex;
     justify-content: flex-start !important;
 }
 
 .Home .img img {
-    width: 100%;
     width: 100% !important;
     display: inline-block;
     margin-top: -200px !important;
@@ -1006,9 +1076,9 @@ form label {
 .label {
     position: absolute;
     top: -14px !important;
-    left: 25px;
+    left: 20px;
     padding: 0px 0px !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     transition: all .5s !important;
     width: 98%;
     height: fit-content !important;

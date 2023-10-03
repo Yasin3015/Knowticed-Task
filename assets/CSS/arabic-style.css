@@ -5,20 +5,21 @@ html{
 .nav .contact i span a {
     margin-right: 35px;
 }
+.about__flex,
+.Home,
+.buttom,
 .career__rev{
-    background-image: url("../images/Section\ 2.png");
-    background-position: 30px;
-    background-repeat: no-repeat !important;
+    background: linear-gradient(-106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.landing section .img {
+    padding-right: 40px;
+    padding-bottom: 0px;
 }
 .career__left{
-    background-image: url("../images/Rectangle\ 2021.png");
-    background-position: -1px;
-    background-repeat: no-repeat !important;
-    padding-right: 0px ;
-    padding-left: 30px;
-}
-.tap-active{
-    padding-left: 20px;
+    background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
+    padding-left: 0px !important;
 }
 .tab__content{
     text-align: right;
@@ -49,6 +50,20 @@ form div::before{
     padding-right: 0px;
 }
 
+
+.text h1,.text h2, .text p{
+    text-align: right !important;
+}
+
+
+
+form div::before {
+    width: calc(100% - 120px) !important;
+    left: 0 !important;
+    top: 0px !important;
+    right: 117px !important;
+}
+
 @media (max-width:1020px) {
     .career .info{
         padding-right: 15px;
@@ -59,6 +74,9 @@ form div::before{
 }
 
 @media (max-width: 992px) {
+    .text h1,.text h2, .text p{
+        text-align: center !important;
+    }
     .hiden {
         right: -100%;
     }
@@ -80,4 +98,33 @@ form div::before{
     .career .info{
         text-align: right;
     }
+    .career .img {
+        width: 95% !important;
+        padding: 0px !important;
+        height: fit-content !important;
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: #2D2D2D;
+    }
+    .career .img img {
+        width: 100% !important;
+        height: fit-content !important;
+        background-color: #2D2D2D;
+        text-align: center;
+        border-radius: 20px !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        margin-top: 0px !important;
+        margin: auto !important;
+    }
+    .career__rev {
+        padding-left: 0px;
+        flex-direction: column-reverse !important;
+    }
+
+    
+    .career .img img.iimg{
+        width: 100% !important;
+    }
+
 }
