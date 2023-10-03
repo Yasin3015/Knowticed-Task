@@ -1,6 +1,5 @@
 if(window.localStorage.getItem("language") == null){
     window.localStorage.setItem("language","English");
-    console.log("DONEEEEE")
 }
 // remove loading page
 function loadingPage() {
