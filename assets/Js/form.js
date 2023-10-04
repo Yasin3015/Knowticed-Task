@@ -16,6 +16,7 @@ let displayError = (ele, msg) => {
   ele.parentElement.children[1].classList.add(`red`);
   ele.parentElement.classList.add("bg-color");
 };
+
 // REMOVE THE MODEL
 let modal = document.getElementById("theModel");
 let removeModel = () => {
@@ -106,6 +107,8 @@ const isValidMessage = (message) => {
 
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  currentLang = localStorage.getItem("language");
   const formData = new FormData(formEl);
   const data = Object.fromEntries(formData);
 
