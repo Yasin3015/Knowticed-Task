@@ -456,6 +456,26 @@ footer .container .social a img {
 @media (max-width:600px) {
     footer .container {
         flex-direction: column;
+        border-top:0px !important;
+        position: relative;
+    }
+    footer .container::after{
+        width:35%;
+        content: "";
+        height: 1px;
+        background-color: rgb(161, 161, 161);
+        position: absolute;
+        left: 2%;
+        top:-15%;
+    }
+    footer .container::before{
+        width: 35%;
+        content: "";
+        height: 1px;
+        background-color: rgb(161, 161, 161);
+        position: absolute;
+        right: 2%;
+        top:-15%;
     }
 
     footer .container div {
@@ -464,10 +484,8 @@ footer .container .social a img {
 
     footer .container .social {
         margin-top: -65px;
-        background-color: rgb(40, 40, 40);
         padding: 0px 10px;
     }
-
     .copyright {
         padding-top: 10px;
     }
@@ -572,6 +590,7 @@ main h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 35px auto !important;
     }
     .service .info h2 {
         font-size: 25px !important;
@@ -745,15 +764,15 @@ main h1 {
     text-align: left;
     color: white;
     font-size: 60px;
+    line-height: 50px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .work-text h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: var(--headers-size);
     text-transform: none;
-    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 
@@ -764,14 +783,13 @@ main h1 {
     font-size: 25px;
     font-weight: 500;
     align-items: center;
-    margin-top: 30px;
+    margin-top: -30px !important;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
 
 .work-headers .header-p {
-    margin: 10px;
-    /* margin-top: -30px; */
+    margin: 20px;
     color: #8b8b8d;
     text-transform: capitalize;
     cursor: pointer;
@@ -813,6 +831,7 @@ main h1 {
     height: 400px;
     border-radius: 30px;
     display: flex;
+    margin-top: 35px;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
@@ -823,14 +842,21 @@ main h1 {
     height: 400px;
 }
 
-
+.tab__content li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .tab__content ul,
-.tab__content ol {
+.tab__content ol,
+.tab__content p {
     padding-left: 45px !important;
-    width: 900px;
+    width: 960px;
 }
 
 @media (max-width: 992px) {
+    .about__flex{
+        background: none !important;
+    }
     .about__flex .tab__content {
         padding: 15px;
         width: calc(100% - 290px);
@@ -1110,7 +1136,7 @@ form div::after {
     content: "";
     height: 1px;
     width: 15px;
-    background-color: white;
+    background-color: rgb(146, 146, 146);
     position: absolute;
     left: 2px;
     top: 0px;
@@ -1120,22 +1146,22 @@ form div::after {
 form div::before {
     content: "";
     height: 1px;
-    width: calc(100% - 110px);
-    background-color: white;
+    width: calc(100% - 90px);
+    background-color: rgb(146, 146, 146);
     position: absolute;
     right: 3px;
     top: 0px;
     z-index: 0;
 }
-form div.phone::before{
-    width: calc(100% - 150px) !important;
+form div.phonee::before{
+    width: calc(100% - 130px) !important;
 }
 
 .form-container input,
 .form-container textarea {
     padding: 8px 15px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgb(146, 146, 146);
     outline: none;
     background: linear-gradient(0deg, #54545400, #545454);
     color: white;
@@ -1502,28 +1528,11 @@ form .bg-color::before {
 
 /* ================= Terms ==================== */
 
-.returnBack {
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 20px;
-    padding: 0px;
-    height: fit-content !important;
-}
-
-.return {
-    text-decoration: none;
-    color: white;
-    font-size: 45px;
-    margin-right: 10px;
-    font-weight: 500;
-}
-
 .termsAndCoditions {
     color: #FFDE59;
     font-size: 45px;
     line-height: 28px;
+    margin-top: 60px;
 }
 
 .lastUpadte {
@@ -1539,8 +1548,15 @@ form .bg-color::before {
     background: linear-gradient(106.65deg, rgba(255, 255, 255, 0.4) -2.73%, rgba(255, 255, 255, 0) 65.25%);
     padding: 40px 60px;
     border-radius: 27px !important;
+    margin-top: 60px;
     overflow: auto;
     color: rgb(223, 223, 223);
+}
+.buttom div{
+    margin-bottom: 20px;
+}
+.buttom div li{
+    margin-bottom: 10px;
 }
 
 .buttom li,
@@ -1584,11 +1600,6 @@ form .bg-color::before {
         font-size: 12px !important;
         font-weight: 400;
     }
-
-    .deleted {
-        display: none;
-    }
-
     .termsAndCoditions {
         width: 100%;
         font-size: 45px !important;
