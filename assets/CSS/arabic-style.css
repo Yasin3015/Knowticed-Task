@@ -132,3 +132,21 @@ form div::before {
     }
 
 }
+.buttom{
+    padding-left: 0px;
+    padding-right: 35px;
+}
+.buttom li,
+.buttom p{
+    line-height: 30px;
+}
+.return{
+    padding-right: 0px !important;
+    margin-right:  0px !important;
+    padding-left: 10px !important;
+    font-size: 50px;
+}
+.landing .about__flex .info p.homeDec,
+.landing .about__flex .info p.homeDec2{
+    padding-right: 0px !important;
+}
