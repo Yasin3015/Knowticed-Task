@@ -614,6 +614,11 @@ main h1 {
         margin: auto;
     }
 }
+@media (max-width:400px) {
+    .service{
+        padding: 0px !important;
+    }
+}
 
 /* ============== CAREERS ================= */
 .career {
@@ -709,7 +714,6 @@ main h1 {
     }
 
     .career .info {
-        /* font-size: 20px; */
         padding: 0px !important;
         line-height: 1.5;
         width: 95%;
@@ -900,6 +904,18 @@ main h1 {
     }
 
 }
+@media (max-width: 400px) {
+    .work-headers .header-p{
+        margin: 7px !important;
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+    .about__flex li,
+    .about__flex p{
+        font-size: 14px;
+        line-height: 20px !important;
+    }
+}
 
 /* ================= HOME ============= */
 
@@ -911,7 +927,7 @@ main h1 {
 }
 
 .landing {
-    margin-top: 70px;
+    margin-top: 45px;
 
 }
 
@@ -944,7 +960,7 @@ main h1 {
 }
 
 .top {
-    margin-top: 20px;
+    margin-top: -10px !important;
 }
 @media (min-width: 1600px) {
     .landing section .info{
@@ -961,7 +977,6 @@ main h1 {
     }
     .Home .img{
         width: 45% !important;
-        /* background-color: #2D2D2D; */
     }
 }
 
@@ -974,6 +989,7 @@ main h1 {
 .top span {
     color: white;
     font-size: 20px;
+    display: inline-block;
 }
 
 .top h1 {
