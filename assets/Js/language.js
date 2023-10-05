@@ -4,13 +4,12 @@ const languageBtn = document.querySelector(".language");
 
 const clearError = () => {
   let errors = document.querySelectorAll(".error");
+  let inputs = document.querySelectorAll("form .rem__error");
   errors.forEach((ele) => {
     ele.textContent = "";
   });
-  let inputs = document.querySelectorAll("form .rem__error");
   inputs.forEach((ele) => {
     ele.parentElement.classList.remove("bg-color");
-    ele.parentElement.children[2].textContent = "";
     ele.classList.remove("red");
   });
 };
@@ -30,7 +29,7 @@ const removeArabicDirection = () => {
 };
 
 const changeLanguage = () => {
-  clearError();
+  if (window.location.pathname === "/contactus.html") clearError();
   if (languageBtn && languageBtn.textContent === "English") {
     for (const key of Object.keys(jsonEN)) {
       const el = document.querySelector(`.${key}`);

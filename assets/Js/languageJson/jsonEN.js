@@ -58,6 +58,7 @@ const jsonEN = {
     "By following these best practices, Knowticed is building a strong foundation for sustained growth and long-term success.",
   //services.....................................
   services: "Services",
+  services2: "Services",
   servicesSubTitle:
     "Stand out from the crowd with our rich multimedia features, allowing you to showcase your portfolio, highlight your expertise, and embed social media links to foster meaningful connections. With just a tap, recipients can effortlessly save your contact information and access it anytime, anywhere, ensuring you're always top of mind.",
   servicesSubTitle2:
@@ -116,6 +117,7 @@ const jsonEN = {
   //.........................................
   //careers.....................................
   careers: "Careers",
+  careers2: "Careers",
   careersTitle: "Employment At Knowticed",
   careersSubTitle1:
     "Our company is at the forefront of innovation, constantly pushing boundaries and challenging the status quo. By working with us, you will have the opportunity to be a part of groundbreaking projects and make a meaningful impact on industries and society as a whole. Join our company and become part of a dynamic and inclusive team where your talents will be recognized, appreciated, and nurtured. We foster a culture of growth and personal development, empowering our employees to reach their full potential.",
