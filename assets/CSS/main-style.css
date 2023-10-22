@@ -1646,3 +1646,8 @@ form .bg-color::before {
     text-decoration: none !important;
     color: rgb(61, 61, 199);
 }
+
+.about__flex,
+.buttom{
+    height: calc(100vh - 400px) !important;
+}

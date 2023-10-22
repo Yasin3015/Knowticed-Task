@@ -272,6 +272,57 @@ const jsonEN = {
   // el63: "support@knowticed.com",
   el64: 'You must include: (i) your name and residence address; (ii) the mobile phone number associated with your account; and (iii) a clear statement that you want to opt-out of our terms\' agreement to arbitrate. Small claims court. As an alternative to arbitration, if permitted by your local "small claims" court\'s rules, you may bring your dispute in your local "small claims" court, as long as the matter advances on an individual (non-class) basis.',
   el65: 'No class actions, class arbitrations, or representative actions for users located in the United States or Canada: we and you each agree that if you are a knowticed user located in the United States or Canada, each of us and you may bring disputes against the other only on its or your behalf, and not on behalf of any other person or entity, or any class of people. We and you each agree not to participate in a class action, a class-wide arbitration, disputes brought in a private attorney general or representative capacity, or consolidated disputes involving any other person or entity in connection with any dispute. If there is a final judicial determination that any particular dispute (or a request for particular relief) cannot be arbitrated in accordance with this provision\'s limitations, then only that dispute (or only that request for relief) may be brought in court. All other disputes (or requests for relief) remain subject to this provision. Place to file permitted court actions. If you opt-out of the agreement to arbitrate, if your dispute is an excluded dispute, or if the arbitration agreement is found to be unenforceable, you agree to be subject to the applicable provision in the "dispute resolution" section set forth above.',
+  privacy:"Privacy Statement",
+  "Header":"Privacy Statement for Knowticed",
+
+    "Date":"Effective Date: 21/10/2023",
+
+    "Description":"At Knowticed, we are committed to protecting your privacy and ensuring the security of your personal data. This Privacy Statement outlines our practices regarding the collection, use, and protection of your information when you use our services. ",
+
+    "CollectedInfo":"1. Information We Collect",
+
+    "CollectedInfodesc":"We collect and process the following types of information when you use our services:",
+    "CollectedInfodesc1":" User-Provided Information: We may collect information that you provide directly to us, such as your name, email address, and any other information you choose to share when using our application.",
+    "CollectedInfodesc2":"Automatically Collected Information: Our application may automatically collect certain information, such as your device type, operating system, unique device identifier, IP address, and usage data. This information helps us improve the performance and functionality of our app.",
+    "CollectedInfodesc3":"Usage Information: We may collect data related to your interactions with our application, including your posts, comments, likes, and other social media activities. This information is used to provide you with personalized content and enhance your user experience.",
+
+
+    "HowWeUserYourINfo":"2. How We Use Your Information",
+
+    "puroses":"We use the collected information for the following purposes:",
+    "purpose1":"To provide, maintain, and improve our mobile application.",
+    "purpose2":"To personalize your experience by displaying content tailored to your interests.",
+    "purpose3":"To communicate with you and respond to your inquiries and feedback.",
+    "purpose4":"To analyze usage patterns and gather insights to enhance our services.",
+    "purpose5":"To comply with legal obligations and prevent fraudulent activities.",
+
+    "SharingYourInfo":"3. Sharing Your Information",
+    "SharingYourInfoDesc":"We do not sell, rent, or trade your personal information to third parties. Your data may be shared under the following circumstances:",
+    "SharingYourInfoDesc1":"With Your Consent: We may share your information with third parties when you explicitly consent to such sharing.",
+    "SharingYourInfoDesc2":"Service Providers: We engage third-party service providers to help us with application development, analytics, and customer support. These providers are contractually obligated to protect your information and use it solely for the purposes we specify.",
+    "SharingYourInfoDesc3":"Legal Requirements: We may disclose your information in response to legal requests or court orders, or to protect our rights, property, and safety.",
+
+    "DataSecurity":"4. Data Security",
+    "DataSecuritydesc":"We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, please note that no data transmission or storage method can guarantee absolute security.",
+
+
+    "RightsAndChoices":"5. Your Rights and Choices",
+    "RightsAndChoicesdesc":"You have the following rights regarding your personal information:",
+    "RightsAndChoicesdesc1":"Access and Correction: You can request to access, update, or correct your personal data by contacting us at support@knowticed.com.",
+    "RightsAndChoicesdesc2":"Data Deletion: You may request the deletion of your account and the associated data. Please note that this may affect your ability to use certain features of our application.",
+    "RightsAndChoicesdesc3":"Opt-Out: You can opt out of marketing communications by following the instructions in the communication or by contacting us.",
+
+
+    "PrivacyStatement" : "6. Changes to this Privacy Statement",
+    "PrivacyStatementdesc":"We may update this Privacy Statement from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. You will be notified of any material changes via the application or email.",
+
+
+
+
+    "contactUS" : "7. Contact Us",
+    "contactUSInfo1":"If you have any questions, concerns, or requests related to your privacy or this Privacy Statement, please contact us at support@knowticed.com",
+    "contactUSInfo2":"By using our services, you agree to the practices outlined in this Privacy Statement. We are dedicated to respecting your privacy and ensuring your control over your data, in accordance with the highest standards in the industry."
+
 };
 //export the jsonEN object
 
