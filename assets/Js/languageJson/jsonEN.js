@@ -308,7 +308,7 @@ const jsonEN = {
 
     "RightsAndChoices":"5. Your Rights and Choices",
     "RightsAndChoicesdesc":"You have the following rights regarding your personal information:",
-    "RightsAndChoicesdesc1":"Access and Correction: You can request to access, update, or correct your personal data by contacting us at support@knowticed.com.",
+    "RightsAndChoicesdesc1":"Access and Correction: You can request to access, update, or correct your personal data by contacting us at",
     "RightsAndChoicesdesc2":"Data Deletion: You may request the deletion of your account and the associated data. Please note that this may affect your ability to use certain features of our application.",
     "RightsAndChoicesdesc3":"Opt-Out: You can opt out of marketing communications by following the instructions in the communication or by contacting us.",
 
@@ -320,7 +320,7 @@ const jsonEN = {
 
 
     "contactUS" : "7. Contact Us",
-    "contactUSInfo1":"If you have any questions, concerns, or requests related to your privacy or this Privacy Statement, please contact us at support@knowticed.com",
+    "contactUSInfo1":"If you have any questions, concerns, or requests related to your privacy or this Privacy Statement, please contact us at",
     "contactUSInfo2":"By using our services, you agree to the practices outlined in this Privacy Statement. We are dedicated to respecting your privacy and ensuring your control over your data, in accordance with the highest standards in the industry."
 
 };

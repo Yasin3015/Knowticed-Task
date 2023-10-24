@@ -1,5 +1,24 @@
 import { jsonEN } from "./languageJson/jsonEN.js";
 import { jsonAR } from "./languageJson/jsonAR.js";
+
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js'
+import { getFirestore, collection,  addDoc, getDocs} from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js'
+
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCVQcUZRxmk1_LpLbKv0Ju2EcC7iXB7n7A",
+  authDomain: "knowticed-store.firebaseapp.com",
+  projectId: "knowticed-store",
+  storageBucket: "knowticed-store.appspot.com",
+  messagingSenderId: "641039491127",
+  appId: "1:641039491127:web:ccfd9d23718e36bbcf5fb2",
+  measurementId: "G-Q37P6EPJ2F"
+};
+initializeApp(firebaseConfig);
+const dataBase = getFirestore();
+const coll = collection(dataBase,"form");
+
 const formEl = document.querySelector("form");
 const nameError = document.getElementById("nameError");
 const emailError = document.getElementById("emailError");
@@ -11,7 +30,10 @@ const dialogDescWebEl = document.querySelector(".dialogDescWeb");
 const closeEl = document.querySelector(".close");
 let currentLang = localStorage.getItem("language");
 
+
+
 let displayError = (ele, msg) => {
+
   ele.textContent = msg;
   ele.parentElement.children[1].classList.add(`red`);
   ele.parentElement.classList.add("bg-color");
@@ -132,20 +154,16 @@ formEl.addEventListener("submit", (e) => {
     !validMessage
   )
     return;
-
-  fetch("https://knowticed-api.onrender.com/form", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
+    addDoc(coll, {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      subject: data.subject,
+      message: data.message
+    }).then(() =>{
+      formEl.reset();
     })
-    .catch((err) => console.log(err));
-  showModel();
+  
 });
 
 // Remove error on focus input

@@ -8,6 +8,7 @@
     font-family: 'cairo';
 }
 
+
 html {
     direction: ltr;
 }
@@ -489,7 +490,6 @@ footer .container .social a img {
     .copyright {
         padding-top: 10px;
     }
-
 }
 
 
@@ -856,34 +856,29 @@ main h1 {
     padding-left: 45px !important;
     width: 960px;
 }
-
-@media (max-width: 992px) {
+@media (max-width:4000px) {
     .about__flex{
-        background: none !important;
+        height: fit-content !important;
     }
-    .about__flex .tab__content {
-        padding: 15px;
-        width: calc(100% - 290px);
+    .buttom{
+        height: calc(100vh - 400px) !important;
     }
-
-    .about__flex .image img {
-        height: 380px;
-    }
-
 }
-
-@media (max-width: 830px) {
-    .about__flex .image img {
-        height: 280px;
+@media (max-width:1600px) {
+    .about__flex{
+        height: calc(100vh - 400px) !important;
     }
-
+}
+@media (max-width: 992px) {
     .about__flex {
         background-image: none;
         flex-direction: column-reverse;
         height: 650px;
     }
-    
-
+    .about__flex .tab__content {
+        padding: 15px;
+        width: calc(100% - 290px);
+    }
     .about__flex .tab__content {
         width: 100%;
         padding: 10px;
@@ -894,13 +889,24 @@ main h1 {
         font-size: 18px;
         font-weight: 600;
     }
+    .about__flex .image img {
+        height: 280px;
+    }
 
 }
+
+
 
 @media (max-width: 547px) {
     .work-text h1 {
         font-size: 35px;
         text-align: center;
+    }
+    .about__flex{
+        height: 500px !important;
+    }
+    .about__flex .image img {
+        height: 180px !important;
     }
 
 }
@@ -1647,7 +1653,33 @@ form .bg-color::before {
     color: rgb(61, 61, 199);
 }
 
-.about__flex,
-.buttom{
-    height: calc(100vh - 400px) !important;
+
+.privacy_content div,
+.privacy_content p{
+    width: 87% !important;
+}
+.privacy_content p:first-child{
+    font-size: 20px;
+}
+.privacy_content div h4{
+    margin-top: 25px; 
+}
+@media (max-width:992px) {
+    .privacy_content div,
+    .privacy_content p{
+        width: 100% !important;
+    }
+}
+@media (max-width:600px) {
+    .privacy_content1 .top h1{
+        font-size: 25px !important;
+        margin-bottom: 15px;
+        line-height: 37px !important;
+    }
+    .privacy_content1 .top{
+        margin-bottom: 0px !important;
+    }
+    .privacy_content1 .privacy_content{
+        margin-top: 15px !important;
+    }
 }
