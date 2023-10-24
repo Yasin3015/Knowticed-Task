@@ -4,7 +4,7 @@ import { jsonAR } from "./languageJson/jsonAR.js";
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js'
 import { getFirestore, collection,  addDoc, getDocs} from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js'
 
-
+import { fildes,removeAnimation } from "./contact.js";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCVQcUZRxmk1_LpLbKv0Ju2EcC7iXB7n7A",
@@ -163,6 +163,8 @@ formEl.addEventListener("submit", (e) => {
     }).then(() =>{
       formEl.reset();
     })
+    removeAnimation(fildes)
+    showModel()
   
 });
 
